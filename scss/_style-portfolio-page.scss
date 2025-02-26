@@ -1,0 +1,114 @@
+$containerWidth: 1140;
+$maxWidthContainer: 1140;
+$minWidth: 320;
+
+
+
+.wrapper-portfolio {
+  background: rgba(8, 7, 7, 1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-portfolio {
+  margin-bottom: 35px;
+}
+
+.header-portfolio-container {
+  @include header-container-styles;
+
+  .nav-header {
+    @include nav-header-styles;
+  }
+
+  .nav-list-portfolio {
+    @include adaptiveValue("gap", 75, 20);
+    display: flex;
+    margin-left: auto;
+  }
+
+  .social-media-portfolio-block {
+    @include adaptiveValue("margin-left", 85, 24);
+    display: flex;
+    gap: 10px;
+    margin-left: 85px;
+
+    .social-media-logo-portfolio {
+      max-width: 27px;
+      height: 100%;
+    }
+  }
+}
+
+.main {
+  margin-bottom: 20px;
+}
+
+.main-portfolio-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  line-height: getLineHeight(50.4, 42);
+  text-align: center;
+  @include adaptiveValue("font-size", 42, 36);
+  @include adaptiveValue("margin-bottom", 70, 25);
+}
+.portfolio-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+.portfolio-image {
+  flex: 1 1;
+  object-fit: cover;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-link {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  @include adaptiveValue("max-width", 463, 270);
+  @include adaptiveValue("height", 600, 320);
+}
+
+.portrait::after {
+  content: "Портрети";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include adaptiveValue("font-size", 32, 22);
+  line-height: getLineHeight(38.4, 32);
+}
+
+.landscape::after {
+  content: "Краєвиди";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include adaptiveValue("font-size", 32, 22);
+  line-height: getLineHeight(38.4, 32);
+}
+
+.conten::after {
+  content: "Контентні";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include adaptiveValue("font-size", 32, 22);
+  line-height: getLineHeight(38.4, 32);
+}
