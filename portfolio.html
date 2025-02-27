@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфоліо фотографині - Головна</title>
+    <title>Портфоліо фотографині - останні роботи</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="wrapper">
+    <div class="wrapper-portfolio">
         <header class="header">
             <div class="header-container">
                 <nav class="nav-header">
-                    <a href="index.html" class="logo-link"><img src="images/icons/ovf-logo.svg" alt="Логотип"
-                            class="nav-logo"></a>
+                    <a href="index.html" class="logo-link"><img src="images/icons/ovf-logo.svg"
+                            alt="Логотип" class="nav-logo"></a>
                     <ul class="nav-list">
                         <li class="nav-list-item"><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-link">Про мене</a></li>
@@ -28,26 +29,35 @@
                     <div class="social-media-block">
                         <a href="https://www.facebook.com/" target="_blank" class="social-media-link"><img
                                 src="images/icons/facebook-logo.svg" alt="Facebook" class="social-media-logo"> </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="social-media-link"><img
+                        <a href="https://www.instagram.com/" target="_blank" class="social-media-link-portfolio"><img
                                 src="images/icons/instagram-logo.svg" alt="Instagram" class="social-media-logo"></a>
                     </div>
                     <button class="burger-button" type="button">
                     </button>
                     <div class="burger-menu">
                         <ul class="nav-list burger-list">
-                            <li class="nav-list-item"><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
-                            <li class="nav-list-item"><a href="#" class="nav-link">Про мене</a></li>
-                            <li class="nav-list-item"><a href="#" class="nav-link">Контакти</a></li>
+                            <li class="nav-list-item-portfolio"><a href="portfolio.html" class="nav-link">Портфоліо</a>
+                            </li>
+                            <li class="nav-list-item-portfolio"><a href="#" class="nav-link">Про мене</a></li>
+                            <li class="nav-list-item-portfolio"><a href="#" class="nav-link">Контакти</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <div class="main-container">
-                <div class="title-block">
-                    <h1 class="hero-title">Олександра Вільна</h1>
-                    <p class="description-title">фотографиня</p>
+            <div class="main-portfolio-container">
+                <h1 class="portfolio-title">Останні Роботи</h1>
+                <div class="portfolio-block">
+                    <a href="#" class="portfolio-link portrait">
+                        <img src="images/content/portrait.webp" alt="Портрети" class="portfolio-image ">
+                    </a>
+                    <a href="#" class="portfolio-link landscape">
+                        <img src="images/content/landscape.webp" alt="Краєвиди" class="portfolio-image">
+                    </a>
+                    <a href="#" class="portfolio-link  conten">
+                        <img src="images/content/content.webp" alt="Контентні" class="portfolio-image">
+                    </a>
                 </div>
             </div>
         </main>
@@ -59,6 +69,5 @@
     </div>
     <script src="js/script.js"></script>
 </body>
-
 
 </html>
