@@ -40,6 +40,18 @@ body {
     @include adaptiveValue("gap", 75, 20);
     display: flex;
     margin-left: auto;
+
+    .nav-link {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        color: rgb(207, 200, 200);
+      }
+    }
+    
+    .nav-link:hover {
+      color: rgb(207, 200, 200);
+    }
   }
   .social-media-block {
     @include adaptiveValue("margin-left", 85, 24);
@@ -106,14 +118,20 @@ body {
   padding: 20px 30px;
   transform: translateX(-100%);
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);  
   z-index: 3;
 
   .burger-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    // text-align: center;
+    gap: 60px;
   }
+
+  .nav-link{
+    font-size: 30px;
+  }
+
 }
 
 .burger-opened .burger-menu::after {

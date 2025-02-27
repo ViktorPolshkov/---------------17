@@ -81,7 +81,12 @@ $minWidth: 320;
   justify-content: center;
   @include adaptiveValue("max-width", 463, 270);
   @include adaptiveValue("height", 600, 320);
+  transition: transform 0.4s ease-in-out;
 }
+
+.portfolio-link:hover{
+  transform: scale(1.05);
+  }
 
 .portrait::after {
   content: "Портрети";
@@ -101,6 +106,12 @@ $minWidth: 320;
   transform: translateX(-50%);
   @include adaptiveValue("font-size", 32, 22);
   line-height: getLineHeight(38.4, 32);
+}
+
+.portrait:hover::after,
+.landscape:hover::after,
+.conten:hover::after{
+  color: rgb(207, 200, 200);
 }
 
 .conten::after {
